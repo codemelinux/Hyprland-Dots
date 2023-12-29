@@ -190,7 +190,7 @@ printf "\n%.0s" {1..2}
 
 # Copying config files
 mkdir -p ~/dotfiles
-chmod +x ~/Downloads/Hyprland-Dots/hyprland-dotfiles.sh && { echo "${OK}Copy completed!"; } || { echo "${ERROR} Failed to copy config files."; exit 1; } 2>&1 | tee -a "$LOG"
+~/Downloads/Hyprland-Dots/hyprland-dotfiles.sh && { echo "${OK}Copy completed!"; } || { echo "${ERROR} Failed to copy config files."; exit 1; } 2>&1 | tee -a "$LOG"
 
 # copying Wallpapers
 mkdir -p ~/Pictures/wallpapers
