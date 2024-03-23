@@ -25,6 +25,10 @@ dynamic_height=$((height * percentage_height / 100))
 dynamic_width=$(($dynamic_width > $max_width ? $max_width : $dynamic_width))
 dynamic_height=$(($dynamic_height > $max_height ? $max_height : $dynamic_height))
 
+config_file="$HOME/.config/hypr/configs"
+
+yad "$config_file/Keybinds.conf"
+
 # Launch yad with calculated width and height
 yad --width=$dynamic_width --height=$dynamic_height \
     --center \
