@@ -1,5 +1,6 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Main Config compact */
+/* zsh theme switch */
+/* -- submitted by https://github.com/hyprhex -- */  
 
 /* ---- Configuration ---- */
 configuration {
@@ -24,8 +25,8 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:						500px;
-	height:						400px;
+    width:						800px;
+	/*height:						450px;*/
     x-offset:                   0px;
     y-offset:                   0px;
     spacing:                    0px;
@@ -40,8 +41,7 @@ window {
     enabled:                    true;
     border-radius:              12px;
     border-radius:              12px;
-    background-image:           url("~/.config/rofi/.current_wallpaper", height);
- 	
+    background-image:           url("~/.config/rofi/.current_wallpaper", width);
 }
 
 /* ---- Mainbox ---- */
@@ -82,7 +82,7 @@ inputbar {
     enabled:                    true;
     text-color:                 @foreground;
     spacing:                    10px;
-    padding:                    14px;
+    padding:                    8px;
     border-radius:              10px;
     border-color:               @foreground;
 	background-color:		    @background;
@@ -94,7 +94,7 @@ inputbar {
 textbox-prompt-colon {
     enabled:                    true;
     expand:                     false;
-    str:                        "📻";
+    str:                        "󰸉 ";
     text-color:                 inherit;
 	background-color:			transparent;
 }
@@ -103,7 +103,7 @@ entry {
     enabled:                    true;
     text-color:                 inherit;
     cursor:                     text;
-    placeholder:                "Choose Online Music Station";
+    placeholder:                "Choose ZSH theme";
     placeholder-color:          inherit;
 	background-color:			transparent;
 }
@@ -111,8 +111,8 @@ entry {
 /* ---- Listview ---- */
 listview {
 	enabled:					 true;
-	columns:					 1;
-	lines:						 7;
+	columns:					 3;
+	lines:						 5;
 	spacing:                     4px;
 	dynamic:                     true;
 	cycle:                       true;
@@ -120,7 +120,7 @@ listview {
 	layout:                      vertical;
 	reverse:                     false;
 	fixed-height:                true;
-	fixed-columns:               true;
+	fixed-columns:               false;
 	background-color:            transparent;
 	border-radius:             	 10px;
 }
